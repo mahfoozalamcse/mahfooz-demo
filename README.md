@@ -1,2 +1,3 @@
 # mahfooz-demo
-this is my second repo
+this is my second repository
+Author - Mahfooz Alam
