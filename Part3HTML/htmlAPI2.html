@@ -1,0 +1,33 @@
+<html>
+<body>
+    <input type="text" id="username" placeholder="Enter your username">
+    <button onclick="saveData()">Save Username</button>
+    <button onclick="loadData()">Load Username</button>
+    <p id="result"></p>
+    <script>
+        function saveData() {
+            const username = document.getElementById("username").value;
+            if (username) {
+                localStorage.setItem("username", username);
+                alert("Username saved!");
+            } else {
+                alert("Please enter a username.");
+            }
+        }
+
+        function loadData() {
+            const username = localStorage.getItem("username");
+            if (username) {
+                document.getElementById("result").innerHTML = `Saved Username: ${username}`;
+            } else {
+                document.getElementById("result").innerHTML = "No username saved.";
+            }
+        }
+    </script>
+</body>
+</html>
+
+// 4. Web Audio API
+// 5. Web Storage API
+// 6. File API
+// 7. IndexedDB API
